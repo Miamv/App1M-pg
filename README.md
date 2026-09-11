@@ -13,8 +13,8 @@ Script Python para inserción masiva de registros en PostgreSQL utilizando `psyc
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/bulk-insert-postgres.git
-cd bulk-insert-postgres
+git clone https://github.com/Miamv/App1M-pg.git
+cd App1M-pg
 ```
 
 ### 2. Crear entorno virtual
@@ -86,7 +86,7 @@ python diagnosticar_csv.py usuarios_bulk.csv
 ## Estructura del Proyecto
 
 ```
-bulk-insert-postgres/
+App1M-pg/
 ├── .env                    # Variables de entorno (no subir a Git)
 ├── .env.example            # Plantilla de variables de entorno
 ├── .gitignore              # Archivos excluidos de Git
@@ -132,4 +132,4 @@ usuario1,usuario1@email.com,John,Doe,"123 Main St",555-0101,true,guest
 
 ## Licencia
 
-MIT License - Ver archivo LICENSE para detalles.
+MIT License

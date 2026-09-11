@@ -126,10 +126,10 @@ def insertar_csv_execute_values(connection_params, csv_path, batch_size=10000):
 if __name__ == "__main__":
     DB_CONFIG = {
         'host': os.getenv('DB_HOST', 'localhost'),
-        'database': os.getenv('DB_NAME', 'USERS_AUTH_DEV'),
-        'user': os.getenv('DB_USER', 'picante'),
+        'database': os.getenv('DB_NAME', ''),
+        'user': os.getenv('DB_USER', ''),
         'password': os.getenv('DB_PASSWORD', ''),
-        'port': int(os.getenv('DB_PORT', '5433'))
+        'port': int(os.getenv('DB_PORT', '5432'))
     }
     
     CSV_PATH = sys.argv[1] if len(sys.argv) > 1 else 'usuarios_bulk.csv'

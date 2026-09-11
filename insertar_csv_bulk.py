@@ -142,8 +142,8 @@ def insertar_desde_csv_batch(connection_params, csv_path, batch_size=100000):
 if __name__ == "__main__":
     DB_CONFIG = {
         'host': os.getenv('DB_HOST', 'localhost'),
-        'database': os.getenv('DB_NAME', 'USERS_AUTH_DEV'),
-        'user': os.getenv('DB_USER', 'picante'),
+        'database': os.getenv('DB_NAME', ''),
+        'user': os.getenv('DB_USER', ''),
         'password': os.getenv('DB_PASSWORD', ''),
         'port': int(os.getenv('DB_PORT', '5432'))
     }
