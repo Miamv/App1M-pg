@@ -1,0 +1,41 @@
+# Archivos de entorno
+.env
+
+# Archivos CSV (datos sensibles)
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Entorno virtual
+venv/
+.venv/
+ENV/
+
+# Archivos de registro
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Archivos de cov erencia
+.coverage
+htmlcov/
+.pytest_cache/
