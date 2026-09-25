@@ -32,17 +32,17 @@ def diagnosticar_csv(csv_path):
         print(f"Total de registros: {total_filas:,}")
         print(f"{'=' * 60}")
         
-        print("\nMapeo sugerido para PostgreSQL:")
+        print("\nMapeo a las tablas de la aplicacion (limitador):")
         print("-" * 60)
         mapeo = {
-            'username': 'VARCHAR(150) UNIQUE NOT NULL',
-            'email': 'VARCHAR(200) UNIQUE NOT NULL',
-            'firstName': 'VARCHAR(100) NOT NULL',
-            'lastName': 'VARCHAR(100) NOT NULL',
-            'address': 'TEXT',
-            'phoneNumber': 'VARCHAR(50)',
-            'active': 'BOOLEAN DEFAULT true',
-            'role': 'VARCHAR(50) DEFAULT \'guest\''
+            'username': 'users.username -> VARCHAR(255) UNIQUE NOT NULL',
+            'email': 'users.email -> VARCHAR(255) NOT NULL',
+            'firstName': 'users_data.first_name -> VARCHAR(255) NOT NULL',
+            'lastName': 'users_data.last_name -> VARCHAR(255)',
+            'address': 'users_data.address -> VARCHAR(255)',
+            'phoneNumber': 'users_data.phone_number -> VARCHAR(255) NOT NULL',
+            'active': 'users.active -> BOOLEAN',
+            'role': 'roles.description -> user_roles(user_id, role_id)',
         }
         
         for col in headers:

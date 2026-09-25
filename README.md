@@ -73,7 +73,7 @@ python insertar_csv_copy.py ruta/archivo.csv
 ### Ejemplos
 
 ```bash
-# Insertar 1 millón de registros (COPY - más rápido)
+# Insertar 1 millón de registros
 python insertar_csv_copy.py usuarios_bulk.csv
 
 # Insertar con tamaño de lote personalizado
